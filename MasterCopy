@@ -1,0 +1,41 @@
+#By Javier Soto
+#CS2302-EC1
+#problem 2
+Import time
+Import random
+
+MyNumber = Random.randomint(0,101)
+Count=0
+
+Print(‘I have picked a number between 0 and 100’)
+Print(‘try to guess the number as quick as possible’)
+Lowpointer=0
+Highpointer=100
+Guess=-1
+Winner= false
+
+While winner == flase:
+		     Guess= int(input(‘Guess the number:’))
+	     If(lowpointer == Highpointer)
+          End=time.time()
+          Winner= true
+     elsIf(Mynumber > Guess)
+          Print(‘the number is less than’, Guess)
+          If(Guess>lowpointer)
+               Lowpointer=Guess
+               Count +=1
+     elsIf(MyNumber<Guess)
+          Print(‘the number is more than’, Guess)
+                 If(Guess<highpointer)
+                 Highpointer=Guess    
+                 Count +=1
+     If(MyNumber==guess)
+	         MyNumber=Random.random(lowpointer,highpointer +1)
+         Print(‘Sorry I didn’t get that’) 
+ 
+
+Print(‘you won’)         
+Print(‘it took you ’ + count + ‘ tries and ’ + (end-start) + ‘seconds’)
+
+
+
